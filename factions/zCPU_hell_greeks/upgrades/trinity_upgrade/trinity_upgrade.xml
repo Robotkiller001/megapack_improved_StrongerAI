@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="no"?>
+
+<upgrade>
+	<image path="images/upgrade_damage.png"/>
+	<image-cancel path="../images/tech_upgrade_cancel.bmp"/>
+	<time value="20"/>
+	<unit-requirements/>
+	<upgrade-requirements/>
+	<resource-requirements>
+		<resource name="1-up" amount="1"/>
+	</resource-requirements>
+	<effects>
+		<unit name="alexander"/>
+		<unit name="archer"/>
+		<unit name="atlas"/>
+		<unit name="battering_ram"/>
+		<unit name="cavalry"/>
+		<unit name="chariot"/>
+		<unit name="dragon"/>
+		<unit name="druid"/>
+		<unit name="hera"/>
+		<unit name="hunting_wolf"/>
+		<unit name="hoplite"/>
+		<unit name="onager"/>
+		<unit name="oxybeles"/>
+		<unit name="peltast"/>
+		<unit name="peltast_"/>
+		<unit name="psiloi"/>
+		<unit name="slave"/>
+		<unit name="survived_cavalry"/>
+		<unit name="survived_chariot"/>
+		<unit name="swordman"/>
+		<unit name="thunderstruck_alexander"/>
+
+		<unit name="barracks"/>
+		<unit name="blacksmith"/>
+		<unit name="civic_center"/>
+		<unit name="engineer"/>
+		<unit name="farm"/>
+		<unit name="palace"/>
+		<unit name="temple"/>
+		<unit name="air_box"/>
+		<unit name="tower"/>
+	</effects>
+	<max-hp value="14" value-percent-multiplier="true"  regeneration="1"/>
+	<max-ep value="0"/>
+	<sight value="1"/>
+	<attack-strenght value="14" value-percent-multiplier="true"/>
+	<attack-range value="0"/>
+	<armor value="0"/>
+	<move-speed value="0"/>
+	<production-speed value="75"/>
+</upgrade>

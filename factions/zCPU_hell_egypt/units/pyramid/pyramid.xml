@@ -1,0 +1,225 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<parameters>
+		<size value="5" />
+		<height value="5" />
+		<max-hp value="12000" regeneration="10"/>
+		<max-ep value="0" />
+		<armor value="40" />
+		<armor-type value="stone3x"/>
+		<sight value="14" />
+		<time value="300" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
+		<cellmap value="true">
+			<row value="11111"/>
+			<row value="11111"/>
+			<row value="11111"/>
+			<row value="11011"/>
+			<row value="11011"/>
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5"/>
+		<rotationAllowed value="true" />
+		<unit-requirements/>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="200" />
+			<resource name="stone" amount="300" />
+			<resource name="wood" amount="150" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "gold" amount="2400"/>
+			<resource name= "wood" amount="1600"/>
+			<resource name= "stone" amount="1800"/>
+			<resource name= "1-up" amount="1"/>
+			<resource name= "food" amount="120"/>
+		</resources-stored>
+		<resources-death>
+			<resource name="gold" amount-value="600" loss-value="200" allow-negative="false" />
+			<resource name="wood" amount-value="300" loss-value="100" allow-negative="false" />
+			<resource name="stone" amount-value="300" loss-value="100" allow-negative="false" />
+			<resource name="food" amount-value="50" />
+		</resources-death>
+		<image path="images/pyramid.bmp" />
+		<image-cancel path="../spearman/images/tech_cancel.bmp"/>
+		<meeting-point value="true" image-path="../desert_camp/images/meeting_point.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav" />
+		</command-sounds>
+	</parameters>
+	<skills>
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/pyramid.g3d" />
+			<sound enabled="false" />
+		</skill>
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/pyramid_construction_0.g3d" minHp="0" maxHp="6000"/>
+			<animation path="models/pyramid_construction_50.g3d" minHp="6001" maxHp="14000"/>
+			<sound enabled="false" />
+		</skill>
+		<skill>
+			<type value="upgrade" />
+			<name value="upgrade_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="200" />
+			<animation path="models/pyramid.g3d" />
+			<sound enabled="false"/>
+		</skill>
+		<skill>
+			<type value="attack"/>
+			<name value="attack_skill"/>
+			<ep-cost value="0"/>
+			<speed value="20"/>
+			<anim-speed value="20"/>
+			<animation path="models/pyramid.g3d"/>
+                        <attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="16"/>
+                        	<target value="faction" include-self="false">
+					<unit-type name="anubis_warrior"/>
+					<unit-type name="horus_scout"/>
+					<unit-type name="ibis"/>
+					<unit-type name="mummy"/>
+					<unit-type name="priest"/>
+					<unit-type name="snake"/>
+					<unit-type name="stone_snake"/>
+					<unit-type name="spearman"/>
+					<unit-type name="spearthrower"/>
+					<unit-type name="scarab"/>
+					<unit-type name="small_scarab"/>
+					<unit-type name="thunderstruck_scarab"/>
+				</target>
+				<max-hp value="0" regeneration="4"/>
+				<max-ep value="0" regeneration="40" value-percent-multiplier="true"/>
+				<sight value="0"/>
+				<attack-strenght value="40" value-percent-multiplier="true"/>
+				<attack-range value="0"/>
+				<armor value="15"/>
+				<move-speed value="20"/>
+				<production-speed value="0"/>
+				<particles value="true">
+					<affected-particle-file path="glow_particles.xml"/>
+				</particles>
+                        </attack-boost>
+			<sound enabled="true" start-time="0">
+				<sound-file path="../sphinx/sounds/sphinx_attack1.wav"/>
+				<sound-file path="../sphinx/sounds/sphinx_attack2.wav"/>
+				<sound-file path="../sphinx/sounds/sphinx_attack3.wav"/>
+			</sound>
+			<attack-strenght value="160"/>
+			<attack-var value="40"/>
+			<attack-range value="15"/>
+			<attack-type value="castle"/>
+			<attack-start-time value="0"/>
+			<attack-fields>
+				<field value="land"/>
+				<field value="air"/>
+			</attack-fields>
+			<projectile value="true">
+				<particle value="true" path="particle_proj.xml"/>
+				<sound enabled="true">
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit1.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit2.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit3.wav"/>
+					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit4.wav"/>
+				</sound>
+			</projectile>
+			<splash value="true">
+				<radius value="1"/>
+				<damage-all value="false"/>
+				<particle value="true" path="particle_splash.xml"/>
+			</splash>
+		</skill>
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/pyramid.g3d" />
+			<sound enabled="false" />
+		</skill>
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/pyramid_destruction.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/tech_building_fall2.wav"/>
+			</sound>
+			<shake enabled="true" intensity="1000" duration="120" start-time="0.0">
+				<self enabled="true" visible="false" in-camera-view="false" camera-distance-affected="false"/>
+				<team enabled="true" visible="false" in-camera-view="false" camera-distance-affected="false"/>
+				<enemy enabled="true" visible="true" in-camera-view="false" camera-distance-affected="true"/>
+			</shake>
+			<fade value="false"/>
+		</skill>
+	</skills>
+
+	<commands>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_slave" />
+			<image path="../slave/images/worker.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="slave"/>
+		</command>
+		<command>
+			<type value="stop"/>
+			<name value="attack_off"/>
+			<image path="images/sphinx_attack_off.bmp"/>
+			<unit-requirements>
+				<unit name="obelisk"/>
+			</unit-requirements>
+			<upgrade-requirements/>
+			<stop-skill value="stop_skill"/>
+		</command>
+		<command>
+			<type value="attack_stopped"/>
+			<name value="attack_on"/>
+			<image path="images/sphinx_attack.bmp"/>
+			<unit-requirements>
+				<unit name="obelisk"/>
+			</unit-requirements>
+			<upgrade-requirements/>
+			<attack-skill value="attack_skill"/>
+			<stop-skill value="stop_skill"/>
+		</command>
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_trinity_upgrade" />
+			<image path="../../upgrades/trinity_upgrade/images/trinity_upgrade.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="trinity_upgrade"/>
+		</command>
+
+	</commands>
+</unit>

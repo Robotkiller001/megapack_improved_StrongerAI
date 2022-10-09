@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="gold" amount="400"/>
+		<resource name="wood" amount="300"/>
+		<resource name="stone" amount="400"/>
+		<resource name="energy" amount="18"/>
+		<resource name="1-up" amount="1"/>
+	</starting-resources>
+	<starting-units>
+		<unit name="mage_tower" amount="1"/>
+		<unit name="initiate" amount="4"/>
+		<unit name="tower_of_souls" amount="1"/>
+		<unit name="thunderstruck_behemoth" amount="0"/>
+		<unit name="demon" amount="0"/>
+		<unit name="evil_dragon" amount="0"/>
+	</starting-units>
+	<music value="true" path="music/music_magic.ogg"/>
+	<flat-particle-positions value="true"/>
+	<ai-behavior>
+		<upgrades>
+			<upgrade name="ancient_summoning"/>
+			<upgrade name="energy_sharpening"/>
+			<upgrade name="hell_gate"/>
+			<upgrade name="energy_compression"/>
+			<upgrade name="dragon_call"/>
+			<upgrade name="faster_movement"/>
+			<upgrade name="golem_power"/>
+			<upgrade name="big_rock"/>
+			<upgrade name="trinity_upgrade"/>
+		</upgrades>
+		<building-units>
+			<unit name="energy_source" minimum="1"/>
+			<unit name="summoner_guild" minimum="1"/>
+			<unit name="library" minimum="1"/>
+			<unit name="mage_tower" minimum="1"/>
+		</building-units>
+		<warrior-units>
+			<unit name="initiate" minimum="8"/>
+		</warrior-units>
+		<static-values>
+			<static type-name="MinMinWarriorsExpandCpuUltra" value="10"/>
+			<static type-name="MinMinWarriorsExpandCpuMega" value="20"/>
+		</static-values>
+	</ai-behavior>	
+</faction>

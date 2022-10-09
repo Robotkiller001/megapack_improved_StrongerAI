@@ -1,0 +1,199 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="4" />
+		<height value="2" />
+		<ai-build-size value="5"/>
+		<max-hp value="4000" regeneration="1"/>
+		<max-ep value="0" />
+		<armor value="0" />
+		<armor-type value="wood"/>
+		<sight value="4" />
+		<time value="50" />
+		<multi-selection value="true"/>
+		<uniform-selection value="true"/>
+		<max-unit-count value="3"/>
+		<cellmap value="true">
+			<row value="0111" />
+			<row value="0111" />
+			<row value="0111" />
+			<row value="0011" />
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+			<property value="burnable"/>
+		</properties>
+		<light enabled="false" />
+		<unit-requirements/>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="150"/>
+			<resource name="wood" amount="100"/>
+			<resource name="stone" amount="100"/>
+			<resource name="food" amount="-22"/>
+		</resource-requirements>
+		<resources-stored>
+			<resource name="food" amount="30"/>
+		</resources-stored>
+		<resources-death>
+			<resource name="food" amount-value="30" />
+		</resources-death>
+		<image path="images/farm.bmp"/>
+		<image-cancel path="../archer/images/tech_cancel.bmp"/>
+		<meeting-point value="true" image-path="../barracks/images/meeting_point.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav"/>
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="$COMMONDATAPATH/sounds/tech_click.wav"/>
+		</command-sounds>
+	</parameters>
+
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>
+			<ep-cost value="0" />
+			<speed value="150"/>
+			<anim-speed value="150" />
+			<animation path="models/chickenfarm_construction_0.g3d" minHp="0" maxHp="2000"/>
+			<animation path="models/chickenfarm_construction_50.g3d" minHp="2001" maxHp="5000"/>
+			<sound enabled="false"/>
+		</skill>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>
+			<ep-cost value="0" />
+			<speed value="40" />
+			<anim-speed value="40" />
+			<animation path="models/chickenfarm.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_idle.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_select1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_select2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_select3.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_select4.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_ack1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_ack2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_ack3.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_ack4.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_ack5.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="70" />
+			<animation path="models/chickenfarm.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_idle.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_select1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_select2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_select3.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_select4.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_ack1.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_ack2.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_ack3.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_ack4.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/chicken_ack5.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+				<sound-file path="$COMMONDATAPATH/sounds/null.wav"/>
+			</sound>
+		</skill>
+
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/farm_destruction.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="$COMMONDATAPATH/sounds/tech_building_fall3.wav"/>
+			</sound>
+			<fade value="false"/>
+		</skill>
+
+		<skill>
+			<type value="upgrade"/>
+			<name value="upgrade_skill"/>
+			<ep-cost value="0"/>
+			<speed value="300"/>
+			<anim-speed value="70"/>
+			<animation path="models/chickenfarm.g3d"/>
+			<sound enabled="false"/>
+			<particles value="true">
+				<particle-file path="upgrade_particles.xml"/>
+			</particles>
+		</skill>
+
+	</skills>
+
+	<!-- *** commands *** -->
+	<commands>
+
+		<command>
+			<type value="produce"/>
+			<name value="produce_chicken" />
+			<image path="../chicken/images/chicken.bmp" />
+			<unit-requirements />
+			<upgrade-requirements />
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="chicken"/>
+		</command>
+
+		<command>
+			<type value="produce"/>
+			<name value="training_hunting_wolf" />
+			<image path="../hunting_wolf/images/hunting_wolf.bmp"/>
+			<unit-requirements/>
+			<upgrade-requirements/>
+			<produce-skill value="produce_skill"/>
+			<produced-unit name="hunting_wolf"/>
+		</command>
+
+		<command>
+			<type value="upgrade"/>
+			<name value="research_barley_bales"/>
+			<image path="../../upgrades/barley_bales/images/stables.bmp"/>
+			<unit-requirements>
+			</unit-requirements>
+			<upgrade-requirements/>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="barley_bales"/>
+		</command>
+
+	</commands>
+</unit>

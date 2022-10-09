@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+
+<upgrade>
+	<image path="images/upgrade_damage.png"/>
+	<image-cancel path="../images/tech_upgrade_cancel.bmp"/>
+	<time value="20"/>
+	<unit-requirements/>
+	<upgrade-requirements/>
+	<resource-requirements>
+		<resource name="1-up" amount="1"/>
+	</resource-requirements>
+	<effects>
+		<unit name="anubis_warrior"/>
+		<unit name="horus_scout"/>
+		<unit name="ibis"/>
+		<unit name="mummy"/>
+		<unit name="priest"/>
+		<unit name="slave"/>
+		<unit name="snake"/>
+		<unit name="stone_snake"/>
+		<unit name="spearman"/>
+		<unit name="spearthrower"/>
+		<unit name="scarab"/>
+		<unit name="small_scarab"/>
+		<unit name="survived_tornado_rider"/>
+		<unit name="tornado_rider"/>
+		<unit name="thunderstruck_scarab"/>
+
+		<unit name="desert_camp"/>
+		<unit name="farm"/>
+		<unit name="obelisk"/>
+		<unit name="pyramid"/>
+		<unit name="temple"/>
+		<unit name="air_pyramid"/>
+		<unit name="sphinx"/>
+	</effects>
+	<max-hp value="14" value-percent-multiplier="true"  regeneration="1"/>
+	<max-ep value="0"/>
+	<sight value="1"/>
+	<attack-strenght value="14" value-percent-multiplier="true"/>
+	<attack-range value="0"/>
+	<armor value="0"/>
+	<move-speed value="0"/>
+	<production-speed value="75"/>
+</upgrade>
