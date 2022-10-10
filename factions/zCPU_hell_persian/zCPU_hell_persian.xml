@@ -32,8 +32,8 @@
 			<upgrade name="trinity_upgrade"/>
 		</upgrades>
 		<static-values>
-			<static type-name="MinMinWarriorsExpandCpuUltra" value="8"/>
-			<static type-name="MinMinWarriorsExpandCpuMega" value="16"/>
+			<static type-name="MinMinWarriorsExpandCpuUltra" value="10"/>
+			<static type-name="MinMinWarriorsExpandCpuMega" value="20"/>
 		</static-values>
 	</ai-behavior>
 </faction>

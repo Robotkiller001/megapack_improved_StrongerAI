@@ -40,8 +40,8 @@
 			<unit name="initiate" minimum="8"/>
 		</warrior-units>
 		<static-values>
-			<static type-name="MinMinWarriorsExpandCpuUltra" value="10"/>
-			<static type-name="MinMinWarriorsExpandCpuMega" value="20"/>
+			<static type-name="MinMinWarriorsExpandCpuUltra" value="12"/>
+			<static type-name="MinMinWarriorsExpandCpuMega" value="24"/>
 		</static-values>
 	</ai-behavior>	
 </faction>

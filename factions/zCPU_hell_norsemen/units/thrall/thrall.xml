@@ -325,7 +325,7 @@
 				<resource name="gold"/>
 				<resource name="stone"/>
 			</harvested-resources>
-			<max-load value="25"/>
+			<max-load value="35"/>
 			<hits-per-unit value="1"/>
 		</command>
 
@@ -342,7 +342,7 @@
 			<harvested-resources>
 				<resource name="wood"/>
 			</harvested-resources>
-			<max-load value="25"/>
+			<max-load value="35"/>
 			<hits-per-unit value="1"/>
 		</command>
 
