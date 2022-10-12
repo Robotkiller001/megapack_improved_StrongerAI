@@ -45,5 +45,5 @@
 	<attack-range value="0"/>
 	<armor value="5"/>
 	<move-speed value="0"/>
-	<production-speed value="150"/>
+	<production-speed value="125"/>
 </upgrade>
