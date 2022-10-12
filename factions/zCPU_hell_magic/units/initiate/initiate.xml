@@ -141,7 +141,7 @@
 			<type value="build"/>
 			<name value="build_skill"/>
 			<ep-cost value="0"/>
-			<speed value="175"/>
+			<speed value="225"/>
 			<anim-speed value="80"/>
 			<animation path="models/initiate_building.g3d"/>
 			<sound enabled="true" start-time="0">
