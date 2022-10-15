@@ -2,9 +2,9 @@
 
 <faction>
 	<starting-resources>
-		<resource name="gold" amount="500"/>
-		<resource name="wood" amount="350"/>
-		<resource name="stone" amount="450"/>
+		<resource name="gold" amount="800"/>
+		<resource name="wood" amount="600"/>
+		<resource name="stone" amount="600"/>
 		<resource name="energy" amount="18"/>
 		<resource name="1-up" amount="1"/>
 	</starting-resources>
@@ -20,15 +20,16 @@
 	<flat-particle-positions value="true"/>
 	<ai-behavior>
 		<upgrades>
+			<upgrade name="trinity_upgrade"/>
 			<upgrade name="ancient_summoning"/>
 			<upgrade name="energy_sharpening"/>
 			<upgrade name="hell_gate"/>
 			<upgrade name="energy_compression"/>
+			<upgrade name="trinity_upgrade2"/>
 			<upgrade name="dragon_call"/>
 			<upgrade name="faster_movement"/>
 			<upgrade name="golem_power"/>
 			<upgrade name="big_rock"/>
-			<upgrade name="trinity_upgrade"/>
 		</upgrades>
 		<building-units>
 			<unit name="energy_source" minimum="1"/>

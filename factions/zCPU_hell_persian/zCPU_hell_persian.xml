@@ -2,9 +2,9 @@
 
 <faction>
 	<starting-resources>
-		<resource name="gold" amount="500"/>
-		<resource name="wood" amount="450"/>
-		<resource name="stone" amount="350"/>
+		<resource name="gold" amount="800"/>
+		<resource name="wood" amount="600"/>
+		<resource name="stone" amount="600"/>
 		<resource name="food" amount="40"/>
 		<resource name="1-up" amount="1"/>
 	</starting-resources>
@@ -23,13 +23,14 @@
 			<unit name="worker" minimum="6"/>
 		</warrior-units>
 		<upgrades>
+			<upgrade name="trinity_upgrade"/>
 			<upgrade name="nails"/>
 			<upgrade name="corn_and_wicker"/>
 			<upgrade name="shield"/>
 			<upgrade name="weapons"/>
+			<upgrade name="trinity_upgrade2"/>
 			<upgrade name="magic_level_1"/>
 			<upgrade name="magic_level_2"/>
-			<upgrade name="trinity_upgrade"/>
 		</upgrades>
 		<static-values>
 			<static type-name="MinMinWarriorsExpandCpuUltra" value="10"/>

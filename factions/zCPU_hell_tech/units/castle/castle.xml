@@ -225,6 +225,17 @@
 			<produced-upgrade name="trinity_upgrade"/>
 		</command>
 
+		<command>
+			<type value="upgrade"/>
+			<name value="upgrade_trinity_upgrade2" />
+			<image path="../../upgrades/trinity_upgrade2/images/trinity_upgrade.bmp" />
+			<unit-requirements/>
+			<upgrade-requirements>
+				<upgrade name="trinity_upgrade"/>
+			</upgrade-requirements>
+			<upgrade-skill value="upgrade_skill"/>
+			<produced-upgrade name="trinity_upgrade2"/>
+		</command>
 
 	</commands>
 </unit>
