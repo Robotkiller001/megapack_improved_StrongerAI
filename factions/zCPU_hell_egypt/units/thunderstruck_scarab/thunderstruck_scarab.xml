@@ -5,7 +5,7 @@
 		<size value="1"/>
 		<height value="1"/>
 		<max-hp value="6000" regeneration="14" start-percentage="100"/>
-		<max-ep value="1000" regeneration="35" start-percentage="100"/>
+		<max-ep value="1300" regeneration="45" start-percentage="100"/>
 		<armor value="30"/>
 		<armor-type value="osiris_protection"/>
 		<max-unit-count value="1"/>
@@ -120,71 +120,6 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="dung_attack_skill"/>
-			<ep-cost value="0"/>
-			<speed value="80"/>
-			<anim-speed value="80"/>
-			<animation path="models/scarab_attacking.g3d"/>
-			<sound enabled="true" start-time="0">
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack1.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack2.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack3.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack4.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack6.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack8.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack11.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack12.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack13.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack15.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/archmage_attack16.wav"/>
-			</sound>
-                        <attack-boost>
-				<allow-multiple-boosts value="true" />
-				<radius value="8"/>
-                        	<target value="ally" include-self="false">
-				</target>
-				<max-hp value="0" regeneration="6"/>
-				<max-ep value="0"/>
-				<sight value="0"/>
-				<attack-strenght value="10" value-percent-multiplier="true"/>
-				<attack-range value="0"/>
-				<armor value="0"/>
-				<move-speed value="0"/>
-				<production-speed value="0"/>
-			<particles value="true">
-					<affected-particle-file path="dmg_aura.xml"/>
-			</particles>
-                        </attack-boost>
-			<attack-strenght value="320"/>
-			<attack-var value="80"/>
-			<attack-range value="8"/>
-			<attack-type value="scarab"/>
-			<attack-fields>
-				<field value="land"/>
-				<field value="air"/>
-			</attack-fields>
-			<attack-start-time value="0.2"/>
-			<projectile value="true">
-				<particle value="true" path="particle_proj.xml"/>
-				<sound enabled="true">
-					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit1.wav"/>
-					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit2.wav"/>
-					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit3.wav"/>
-					<sound-file path="$COMMONDATAPATH/sounds/archmage_hit4.wav"/>
-				</sound>
-			</projectile>
-			<splash value="true">
-				<radius value="1"/>
-				<damage-all value="false"/>
-				<particle value="true" path="particle_splash.xml"/>
-			</splash>
-			<particles value="true">
-				<particle-file path="glow_particles.xml"/>
-			</particles>
-		</skill>
-
-		<skill>
-			<type value="attack"/>
 			<name value="spawn_skill"/>
 			<ep-cost value="1000"/>
 			<speed value="50"/>
@@ -269,16 +204,6 @@
 
 		<command>
 			<type value="attack"/>
-			<name value="dung_attack"/>
-			<image path="images/scarab_attack.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<attack-skill value="dung_attack_skill"/>
-		</command>
-
-		<command>
-			<type value="attack"/>
 			<name value="spawn_attack"/>
 			<image path="images/spawn_attack.bmp"/>
 			<unit-requirements/>
@@ -294,7 +219,7 @@
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
-			<attack-skill value="dung_attack_skill"/>
+			<attack-skill value="spawn_skill"/>
 		</command>
 
 	</commands>

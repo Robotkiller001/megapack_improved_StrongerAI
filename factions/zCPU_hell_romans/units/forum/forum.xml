@@ -251,6 +251,7 @@
 			<unit-requirements/>
 			<upgrade-requirements>
 				<upgrade name="trinity_upgrade"/>
+				<upgrade name="sign_of_mars"/>
 			</upgrade-requirements>
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="trinity_upgrade2"/>

@@ -5,7 +5,7 @@
 		<size value="2"/>
 		<height value="4"/>
 		<max-hp value="13000" regeneration="24" start-percentage="100"/>
-		<max-ep value="1000" regeneration="50" start-percentage="100"/>
+		<max-ep value="1400" regeneration="70" start-percentage="100"/>
 		<armor value="70"/>
 		<armor-type value="valak_power"/>
 		<max-unit-count value="1"/>
@@ -118,54 +118,7 @@
 				<particle-file path="glow_particles.xml"/>
 			</particles>
 		</skill>
-		<skill>
-			<type value="attack"/>
-			<name value="attack_skill"/>
-			<ep-cost value="0"/>
-			<speed value="80"/>
-			<anim-speed value="80"/>
-			<animation path="models/behemoth_attacking.g3d"/>
-			<sound enabled="true" start-time="0.15">
-				<sound-file path="sounds/behemoth_attack1a.wav"/>
-				<sound-file path="sounds/behemoth_attack1b.wav"/>
-				<sound-file path="sounds/behemoth_attack1c.wav"/>
-				<sound-file path="sounds/behemoth_attack1d.wav"/>
-				<sound-file path="sounds/behemoth_attack1e.wav"/>
-				<sound-file path="sounds/behemoth_attack1f.wav"/>
-				<sound-file path="sounds/behemoth_attack1g.wav"/>
-				<sound-file path="sounds/behemoth_attack1h.wav"/>
-			</sound>
-                        <attack-boost>
-				<allow-multiple-boosts value="true" />
-				<radius value="8"/>
-                        	<target value="ally" include-self="false">
-				</target>
-				<max-hp value="0" regeneration="6"/>
-				<max-ep value="0"/>
-				<sight value="0"/>
-				<attack-strenght value="10" value-percent-multiplier="true"/>
-				<attack-range value="0"/>
-				<armor value="0"/>
-				<move-speed value="0"/>
-				<production-speed value="0"/>
-			<particles value="true">
-					<affected-particle-file path="dmg_aura.xml"/>
-			</particles>
-                        </attack-boost>
-			<attack-strenght value="410"/>
-			<attack-var value="120"/>
-			<attack-range value="2"/>
-			<attack-type value="behemoth"/>
-			<attack-fields>
-				<field value="land"/>
-			</attack-fields>
-			<attack-start-time value="0.3"/>
-			<projectile value="false"/>
-			<splash value="false"/>
-			<particles value="true">
-				<particle-file path="glow_particles.xml"/>
-			</particles>
-		</skill>
+
 		<skill>
 			<type value="attack"/>
 			<name value="attack_skill2"/>
@@ -251,15 +204,6 @@
                 <command>
 			<type value="attack"/>
 			<name value="attack"/>
-			<image path="images/behemoth_attack.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<attack-skill value="attack_skill"/>
-		</command>
-                <command>
-			<type value="attack"/>
-			<name value="attack"/>
 			<image path="images/behemoth_attack2.png"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
@@ -273,7 +217,7 @@
 			<unit-requirements/>
 			<upgrade-requirements/>
 			<stop-skill value="stop_skill"/>
-			<attack-skill value="attack_skill"/>
+			<attack-skill value="attack_skill2"/>
 		</command>
 	</commands>
 </unit>

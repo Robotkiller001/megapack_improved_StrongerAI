@@ -219,6 +219,7 @@
 			<unit-requirements/>
 			<upgrade-requirements>
 				<upgrade name="trinity_upgrade"/>
+				<upgrade name="magic_level_1"/>
 			</upgrade-requirements>
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="trinity_upgrade2"/>

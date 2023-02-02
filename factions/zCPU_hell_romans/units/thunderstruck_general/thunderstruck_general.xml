@@ -5,7 +5,7 @@
 		<size value="1"/>
 		<height value="2"/>
 		<max-hp value="11500"  regeneration="22" start-percentage="100"/>
-		<max-ep value="1000" regeneration="50" start-percentage="100"/>
+		<max-ep value="1500" regeneration="70" start-percentage="100"/>
 		<armor value="40"/>
 		<armor-type value="blessed_armor"/>
 		<max-unit-count value="1"/>
@@ -125,61 +125,6 @@
 
 		<skill>
 			<type value="attack"/>
-			<name value="attack_skill"/>
-			<ep-cost value="0"/>
-			<speed value="110"/>
-			<anim-speed value="110"/>
-			<animation path="models/general_attack.g3d"/>
-			<sound enabled="true" start-time="0.15">
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack1.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack2.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack3.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack4.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack5.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack6.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack7.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack8.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack9.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack10.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack11.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack12.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack13.wav"/>
-				<sound-file path="$COMMONDATAPATH/sounds/guard_attack14.wav"/>
-			</sound>
-                        <attack-boost>
-				<allow-multiple-boosts value="true" />
-				<radius value="8"/>
-                        	<target value="ally" include-self="false">
-				</target>
-				<max-hp value="0" regeneration="6"/>
-				<max-ep value="0"/>
-				<sight value="0"/>
-				<attack-strenght value="10" value-percent-multiplier="true"/>
-				<attack-range value="0"/>
-				<armor value="0"/>
-				<move-speed value="0"/>
-				<production-speed value="0"/>
-			<particles value="true">
-					<affected-particle-file path="dmg_aura.xml"/>
-			</particles>
-                        </attack-boost>
-			<attack-strenght value="290"/>
-			<attack-var value="70"/>
-			<attack-range value="1"/>
-			<attack-type value="general"/>
-			<attack-fields>
-				<field value="land"/>
-			</attack-fields>
-			<attack-start-time value="0.25"/>
-			<projectile value="false"/>
-			<splash value="false"/>
-			<particles value="true">
-				<particle-file path="glow_particles2.xml"/>
-			</particles>
-		</skill>
-
-		<skill>
-			<type value="attack"/>
 			<name value="attack_skill2"/>
 			<ep-cost value="1000"/>
 			<speed value="35"/>
@@ -269,16 +214,6 @@
 
 		<command>
 			<type value="attack"/>
-			<name value="attack"/>
-			<image path="images/guard_attack.bmp"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<attack-skill value="attack_skill"/>
-		</command>
-
-		<command>
-			<type value="attack"/>
 			<name value="god_help"/>
 			<image path="images/guard_attack2.bmp"/>
 			<unit-requirements/>
@@ -296,7 +231,7 @@
 				<upgrade name="training_field"/>
 			</upgrade-requirements>
 			<stop-skill value="stop_skill"/>
-			<attack-skill value="attack_skill"/>
+			<attack-skill value="attack_skill2"/>
 		</command>
 	</commands>
 </unit>

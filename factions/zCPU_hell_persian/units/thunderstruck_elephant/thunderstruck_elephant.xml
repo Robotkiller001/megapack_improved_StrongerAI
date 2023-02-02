@@ -8,7 +8,7 @@
 		<size value="2"/>
 		<height value="2"/>
 		<max-hp value="11500" regeneration="22" start-percentage="100"/>
-		<max-ep value="1000" regeneration="50" start-percentage="100"/>
+		<max-ep value="1400" regeneration="65" start-percentage="100"/>
 		<armor value="50"/>
 		<armor-type value="obsidian_aura"/>
 		<max-unit-count value="1"/>
@@ -160,50 +160,6 @@
                         <sound enabled="true" start-time="0">
 				<sound-file path="sounds/elewalk2.wav"/>
 			</sound>
-			<particles value="true">
-				<particle-file path="glow_particles.xml"/>
-			</particles>
-		</skill>
-
-		<skill>
-			<type value="attack"/>
-			<name value="attack_skill"/>
-			<ep-cost value="0"/>
-			<speed value="80"/>
-			<anim-speed value="80"/>
-			<animation path="models/elephant_attack.g3d"/>
-			<sound enabled="true" start-time="0.47">
-				<sound-file path="sounds/eleattack2.wav"/>
-				<sound-file path="sounds/eleattack3.wav"/>
-				<sound-file path="sounds/eleattack3.wav"/>
-			</sound>
-                        <attack-boost>
-				<allow-multiple-boosts value="true" />
-				<radius value="8"/>
-                        	<target value="ally" include-self="false">
-				</target>
-				<max-hp value="0" regeneration="6"/>
-				<max-ep value="0"/>
-				<sight value="0"/>
-				<attack-strenght value="10" value-percent-multiplier="true"/>
-				<attack-range value="0"/>
-				<armor value="0"/>
-				<move-speed value="0"/>
-				<production-speed value="0"/>
-			<particles value="true">
-					<affected-particle-file path="dmg_aura.xml"/>
-			</particles>
-                        </attack-boost>
-			<attack-strenght value="370"/>
-			<attack-var value="80"/>
-			<attack-range value="2"/>
-			<attack-type value="elephant"/>
-			<attack-fields>
-				<field value="land"/>
-			</attack-fields>
-			<attack-start-time value="0.44"/>
-			<projectile value="false"/>
-			<splash value="false"/>
 			<particles value="true">
 				<particle-file path="glow_particles.xml"/>
 			</particles>
@@ -365,16 +321,6 @@
 		<command>
 			<type value="attack"/>
 			<name value="attack"/>
-			<image path="images/elephant_attack.png"/>
-			<unit-requirements/>
-			<upgrade-requirements/>
-			<move-skill value="move_skill"/>
-			<attack-skill value="attack_skill"/>
-		</command>
-
-		<command>
-			<type value="attack"/>
-			<name value="attack"/>
 			<image path="images/elephant_charged_attack.png"/>
 			<unit-requirements/>
 			<upgrade-requirements/>
@@ -400,7 +346,7 @@
 			<upgrade-requirements>
 			</upgrade-requirements>
 			<stop-skill value="stop_skill"/>
-			<attack-skill value="attack_skill"/>
+			<attack-skill value="attack_arrow_skill"/>
 		</command>
 
 	</commands>

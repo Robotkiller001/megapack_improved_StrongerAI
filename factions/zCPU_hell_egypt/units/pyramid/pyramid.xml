@@ -229,6 +229,7 @@
 			<unit-requirements/>
 			<upgrade-requirements>
 				<upgrade name="trinity_upgrade"/>
+				<upgrade name="summon_scarab"/>
 			</upgrade-requirements>
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="trinity_upgrade2"/>

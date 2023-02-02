@@ -235,6 +235,7 @@
 			<unit-requirements/>
 			<upgrade-requirements>
 				<upgrade name="trinity_upgrade"/>
+				<upgrade name="energy_compression"/>
 			</upgrade-requirements>
 			<upgrade-skill value="upgrade_skill"/>
 			<produced-upgrade name="trinity_upgrade2"/>
