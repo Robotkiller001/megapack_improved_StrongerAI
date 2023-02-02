@@ -40,7 +40,7 @@
 		<unit name="defense_tower"/>
 	</effects>
 	<max-hp value="15" regeneration="40" value-percent-multiplier="true"/>
-	<max-ep value="15" regeneration="30" value-percent-multiplier="true"/>
+	<max-ep value="20" regeneration="40" value-percent-multiplier="true"/>
 	<sight value="0"/>
 	<attack-strenght value="15" value-percent-multiplier="true"/>
 	<attack-range value="0"/>

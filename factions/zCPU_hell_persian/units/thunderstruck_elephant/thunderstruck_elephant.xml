@@ -8,7 +8,7 @@
 		<size value="2"/>
 		<height value="2"/>
 		<max-hp value="11500" regeneration="22" start-percentage="100"/>
-		<max-ep value="1400" regeneration="65" start-percentage="100"/>
+		<max-ep value="1400" regeneration="70" start-percentage="100"/>
 		<armor value="50"/>
 		<armor-type value="obsidian_aura"/>
 		<max-unit-count value="1"/>
@@ -132,7 +132,7 @@
 		<skill>
 			<type value="move"/>
 			<name value="charge_skill"/>
-			<ep-cost value="40"/>
+			<ep-cost value="0"/>
 			<speed value="390"/>
 			<anim-speed value="140"/>
 			<animation path="models/elephant_walk.g3d"/>
